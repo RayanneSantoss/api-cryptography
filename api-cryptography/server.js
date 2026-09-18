@@ -13,5 +13,5 @@ const transactionsRoutes = require("./routes/transactionRoutes");
 app.use(transactionsRoutes);
 
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+    console.log(`Server running at http://localhost:${port}`);
 });

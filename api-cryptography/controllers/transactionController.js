@@ -8,7 +8,7 @@ const createTransaction = async (req, res) => {
     } catch (err) {
         console.error(err);
         return res.status(500).json({
-            err: "Erro ao criar transação"
+            err: "Error creating transaction"
         });
     }
 };
@@ -21,7 +21,7 @@ const searchTransaction = async (req, res) => {
     } catch (err) {
         console.error(err);
         return res.status(500).json({
-            err: "Erro ao buscar transação"
+            err: "Error fetching transaction"
         });
     }
 };
@@ -34,7 +34,7 @@ const searchTransactionById = async (req, res) => {
 
         if(!transaction) {
             return res.status(404).json({
-                err: "Transação não encontrada"
+                err: "Transaction not found"
             });
         }
 
@@ -42,7 +42,7 @@ const searchTransactionById = async (req, res) => {
     } catch(err) {
         console.error(err);
         return res.status(500).json({
-            err: "Erro ao buscar transação por id"
+            err: "Error fetching transaction by id"
         });
     }
 }
@@ -56,7 +56,7 @@ const updateTransaction = async (req, res) => {
         );
         if(!transaction) {
             return res.status(404).json({
-                err: "Transação não encontrada"
+                err: "Transaction not found"
             });
         }
 
@@ -64,7 +64,7 @@ const updateTransaction = async (req, res) => {
     } catch (err) {
         console.error(err);
         return res.status(500).json({
-            err: "Erro ao atualizar transação"
+            err: "Error updating transaction"
         });
     }
 }
@@ -77,17 +77,17 @@ const deleteTransaction = async (req, res) => {
 
         if(!transaction) {
             return res.status(404).json({
-                err: "Transação não encontrada"
+                err: "Transaction not found"
             });
         }
 
         return res.status(200).json({
-            message: "Transação deletada com sucesso"
+            message: "Transaction deleted successfully"
         })
     } catch (err) {
         console.error(err);
         return res.status(500).json({
-            err: "Erro ao deletar transação"
+            err: "Error deleting transaction"
         });
     }
 }
