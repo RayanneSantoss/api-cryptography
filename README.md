@@ -33,12 +33,11 @@ Os campos `userDocument` e `creditCardToken` são tratados como dados sensíveis
 ```text
 api-cripto/
 ├── controllers/
+├── config/
+├── models/
+├── crypto/
 ├── middlewares/
 ├── routes/
-├── src/
-│   ├── config/
-│   ├── crypto/
-│   └── models/
 ├── .env.example
 ├── .gitignore
 ├── package.json
@@ -95,7 +94,7 @@ git clone URL_DO_REPOSITORIO
 ### 2. Entre na pasta do projeto
 
 ```bash
-cd api-cripto
+cd api-cryptography
 ```
 
 ### 3. Instale as dependências
