@@ -31,7 +31,7 @@ Os campos `userDocument` e `creditCardToken` são tratados como dados sensíveis
 ## Estrutura do projeto
 
 ```text
-api-cripto/
+api-cryptography/
 ├── controllers/
 ├── config/
 ├── models/
